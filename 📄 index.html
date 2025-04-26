@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio - Bruno Isael</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('background-texture.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#experience">Experiência</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#contact">Contato</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <div class="profile-pic-container" onclick="showDescription()">
+        <img src="WhatsApp Image 2025-03-28 at 20.54.57.jpeg" alt="Foto de perfil" class="profile-pic">
+    </div>
+    <h2>Bruno Isael Schweitzer Ramos</h2>
+    <p>Tenho 21 anos, sou natural de Bom Retiro do Sul, pratico corrida, ciclismo e musculação.</p>
+</section>
+
+<div class="sport-section">
+    <div class="sport">
+        <img src="WhatsApp Image 2025-03-28 at 20.54.56.jpeg" alt="Corrida" class="sport-img">
+        <div class="sport-info">
+            <h2>Corrida</h2>
+            <p>Sou meio maratonista e já completei percursos de 21 km em competições, participando da equipe Santiago Running.</p>
+        </div>
+    </div>
+    <div class="sport">
+        <img src="WhatsApp Image 2025-03-28 at 20.54.57 (1).jpeg" alt="Ciclismo" class="sport-img">
+        <div class="sport-info">
+            <h2>Ciclismo</h2>
+            <p>Participei do Campeonato Gaúcho de Ciclismo e fui campeão na minha categoria, percorrendo distancias de 150 km.</p>
+        </div>
+    </div>
+</div>
+
+<section id="experience">
+    <h2>Experiência</h2>
+    <ul>
+        <li>
+            <h3>Brasilata</h3>
+            <p>Trabalho há 4 anos na Brasilata hoje atuo programador de PCP, desenvolvendo habilidades técnicas e profissionais.</p>
+        </li>
+        <li>
+            <h3>Outras Experiências</h3>
+            <p>Trabalhei em outras empresas quando era menor, adquirindo experiência e conhecimento.</p>
+            <p>Sou formado em computação basica pela ByteSul, tenho formação tambem em disgner grafico pela Alura.</p>
+        </li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Projetos</h2>
+    <div class="project">
+        <h3>Controle de Abastecimentos</h3>
+        <p>App Android para controle de abastecimentos de veículos, com estatísticas detalhadas.</p>
+        <a href="https://github.com/ramosbr38/trabalho/tree/main/Posto%20de%20Combustivel" target="_blank">Ver Projeto</a>
+    </div>
+    <div class="project">
+        <h3>Jogo de Cavalo</h3>
+        <p>Jogo baseado no dinossauro do Chrome, com física aprimorada e contagem de pontos.</p>
+        <a href="https://github.com/ramosbr38/trabalho/blob/main/HorseGame.java" target="_blank">Ver Projeto</a>
+    </div>
+</section>
+
+<section id="feedback">
+    <h2>Avaliação</h2>
+    <div class="buttons">
+        <button id="likeBtn">👍 Like (<span id="likeCount">0</span>)</button>
+        <button id="dislikeBtn">👎 Dislike (<span id="dislikeCount">0</span>)</button>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Habilidades</h2>
+    <div class="skills-list">
+        <span class="skill">HTML, CSS, JavaScript, Java (Android), MongoDB, Docker, MariaDB, Banco de Dados (SQL).</span>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contato</h2>
+    <form action="mailto:ramosbr38@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" id="name" name="Nome" placeholder="Nome" required />
+        <input type="email" id="email" name="Email" placeholder="Email" required />
+        <textarea id="message" name="Mensagem" placeholder="Mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Bruno Isael Schweitzer Ramos</p>
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/bruno-ramos-42059b348/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/ramosbr38" target="_blank">GitHub</a>
+    </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

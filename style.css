@@ -1,0 +1,178 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d0d0d;
+    color: #e0e0e0; 
+}
+
+.profile-pic-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.profile-pic {
+    width: 350px; 
+    height: 350px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 3px solid #6ab0b4; 
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1); 
+    border-color: #4e888a; 
+}
+section {
+    padding: 40px 10%;
+    border-bottom: 1px solid #333;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #1a1a1a;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #8a8a8a;
+}
+
+.sport-section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.sport {
+    position: relative;
+    width: 45%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.sport-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.sport-info {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.sport:hover .sport-info {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sport:hover .sport-info {
+    opacity: 1;
+}
+
+h2, h3 {
+    color: #6ab0b4; 
+}
+button {
+    background-color: #2a3c3f;
+    color: #d0d0d0;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: 2px solid #6ab0b4;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #4e888a;
+    color: #fff;
+}
+
+.project a {
+    color: #6ab0b4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project a:hover {
+    color: #4e888a;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1a1a1a;
+    color: #8a8a8a;
+}
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #2a3c3f;
+    color: #d0d0d0;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1e2b2d;
+}
+
+.social-links a {
+    color: #6ab0b4;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #4e888a;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    border: 2px solid #333;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #6ab0b4;
+    box-shadow: 0 0 8px rgba(106, 176, 180, 0.5);
+}
